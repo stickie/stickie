@@ -12,6 +12,7 @@ Header("Access-Control-Allow-Headers: Content-Type, X-Requested-With");
 Header("Content-type: text/html; charset=windows-1251");
 
 $root = "http://stickie.github.io/stickie/img/";
+$extensionId = "lgnclgpmagnoifinalnfboehjjcpmihi";
 
 $prices = array(
 	5 => '5 голосов', 
@@ -34,7 +35,7 @@ else $r = $_POST['price'];
             Панда
         </div>
         <div class="im_stickerpack_desc">Веселая панда.</div>
-        <div class="im_sticker_act im_stickerpack_buy im_sticker_act_blue" data-price="<?=$r;?>" onclick="return chrome.runtime.sendMessage('ffehemjmnnmlgeoedeemojamhfmjcbii', ['Store', 'Buy', 'Panda', <?=$r;?>);">Купить за <b><?=$prices[$r];?></b></div>
+        <div class="im_sticker_act im_stickerpack_buy im_sticker_act_blue" data-price="<?=$r;?>" onclick="return chrome.runtime.sendMessage('<?=$extensionId;?>', ['Store', 'Buy', 'Panda', <?=$r;?>);">Купить за <b><?=$prices[$r];?></b></div>
     </div>
 </div>
 <div class="im_stickerpack_list clear_fix">

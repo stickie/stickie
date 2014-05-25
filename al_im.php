@@ -12,7 +12,7 @@ Header("Access-Control-Allow-Headers: Content-Type, X-Requested-With");
 Header("Content-type: text/html; charset=windows-1251");
 
 $root = "http://stickie.github.io/stickie/img/";
-$extensionId = "lgnclgpmagnoifinalnfboehjjcpmihi";
+$extensionId = "ffehemjmnnmlgeoedeemojamhfmjcbii";
 
 $prices = array(
 	5 => '5 голосов', 
